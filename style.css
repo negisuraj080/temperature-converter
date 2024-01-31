@@ -1,32 +1,57 @@
-body{
-    padding: 50px 100px;
-    background: url(./—Pngtree—high\ temperature\ summer\ sun\ blue_1474808.jpg);
-    background-size: cover;
+body {
+  padding: 0px 100px;
+  background: url(./—Pngtree—high\ temperature\ summer\ sun\ blue_1474808.jpg);
+  background-size:cover;
+  position: relative;
+  height: 100vh;
+  margin: 0;
 }
 
-h1{
-    text-align: center;
+.temp-convrtr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: clamp(300px, 80%, 800px);
 }
 
-#container{
-    text-align: center;
-    padding: 50px; 
+h1 {
+  text-align: center;
 }
 
-.input-div{
-    display: inline-block;
+#container {
+  text-align: center;
+  padding: 50px;
 }
 
-.inp{
-    padding: 5px 10px;
-    margin: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    width: 250px;
-    text-align: center;
+.input-div {
+  display: inline-block;
 }
 
-label{
-    font-size: 22px;
-    font-weight: bold;
+.inp {
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 250px;
+  text-align: center;
 }
+
+label {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 610px) {
+  body {
+    background: url(./mob-bg.jpg);
+    background-position: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    #container{
+        padding: 50px 0px;
+    }
+  }
